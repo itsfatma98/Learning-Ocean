@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Learning Ocean</title>
+    <link href="img/Logo.jpg" rel="icon" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <!--JavaScript for the slider-->
+
+</head>
+<body>
+    <table width="100%" border-collapse="collapse" border="0" cellpadding="0" cellspacing="0">
+        <!--header-->
+        <tr>
+            <th>
+                <div id="navbar">
+                    <table width="100%">
+                        <tr>
+                            <td width="25%">
+                                <a style="padding:0; margin-left:50px"> <img src="img/Logo.jpg" width="80" height="80" /></a>
+                            </td>
+                            <td width="50%">
+                                <ul style="padding:0px">
+                                    <li class="linerList">
+                                        <a style="font-size:130%" href="Home.html">Home</a>
+                                    </li>
+
+                                    <li class="linerList">
+                                        <a style="font-size:130%" href="#Courses">Cources</a>
+                                    </li>
+
+                                    <li class="linerList">
+                                        <a style="font-size:130%" href="#AboutUs">About us</a>
+                                    </li>
+
+                                    <li class="linerList">
+                                        <a style="font-size:130%" href="#Footer">Contact</a>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td width="25">
+                                <a href="Login.html" class="button" style="width:auto">Login</a>
+                                <a href="SignUp.html" class="button" style="width:auto">Sign Up</a>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </th>
+        </tr>
+
+        <!--form-->
+        <tr>
+            <td>
+<form id="myForm" action="#">
+                 <div class="signupform-structure">
+<p class="Login-title"> User Login</p>
+<div class="form-holder">
+
+<p><label for="fname">First Name:</label></p>
+<p><input type="text" id="fname" placeholder="Enter your first name" class="input" name="fname"></p>
+
+<p><label for="lname">Last Name:</label></p>
+<p><input type="text" id="lname" placeholder="Enter your last name" class="input" name="lname"></p>
+
+<p><label for="email">Email:</label></p>
+<p><input type="text" id="email" placeholder="Enter email" class="input" name="email"></p>
+
+<p><label for="college">College:</label> </p>
+<p>
+<select name="College" id="college" class="input">
+<option selected value="computer">Information technology</option>
+<option value="science">Science</option>
+<option value="econ">Economics &#38; management</option>
+<option value="eng">Engineering</option>
+<option value="hum">Arts &#38; Humanities</option>
+<option value="tour">Tourism</option>
+<option value="mid">Medicine</option>
+<option value="rig">Law</option>
+<option value="dent">Dentist</option>
+<option value="phar">Pharmacy</option>
+<option value="com">Communication &#38; media</option>
+<option value="nur">Nursing</option>
+<option value="edu">Postgraduate studies</option>
+</select>
+</p>
+
+<p><label for="interests">List the courses you are interested in:</label> </p>
+<p><textarea id="interests" style="border-radius: 5px" rows="5" cols="45" name="comment" form="usrform" placeholder="Enter text here..."></textarea></p>
+
+<p><label for="password">Password:</label></p>
+<p><input type="password" id="password" placeholder="Enter password" class="input" name="password"></p>
+
+<p><label for="Con_password">Confirm Password:</label></p>
+<p><input type="password" id="Con_password" placeholder="Password Confirm" class="input" name="Con_password"></p>
+
+<p id="helpText" style="color:red"></p>
+
+<p><input id="submit" class="Signupbtn" type="submit"><input id="reset" class="Signupbtn" type="reset"></p>
+
+<label>Alraedy have an account? <a class="forgetpsw" href="Login.html">Login Now</a></label>
+</div>
+</div>
+</form>
+<script>
+var helpArray = ["Enter your first name","Enter your last name","Enter your e-mail address in the format user@domain","Select your college","Enter the courses you're interested in password","Enter your password","Confirm your password",""];
+var helpText;
+function init() {
+helpText = document.getElementById("helpText");
+registerListeners(document.getElementById("fname"), 0);
+registerListeners(document.getElementById("lname"), 1);
+registerListeners(document.getElementById("email"), 2);
+registerListeners(document.getElementById("college"), 3);
+registerListeners(document.getElementById("interests"), 4);
+registerListeners(document.getElementById("password"), 5);
+registerListeners(document.getElementById("Con_password"), 6);
+
+var myForm = document.getElementById("myForm");
+myForm.addEventListener("submit",
+function(){
+return confirm("Are you sure to you want to submit?");
+},false);
+
+myForm.addEventListener("reset",
+function(){
+return confirm("Are you sure to you want to reset?");
+},false);
+
+}
+function registerListeners(object, messageNumber) {
+object.addEventListener("focus", function () { helpText.innerHTML = helpArray[messageNumber]; }, false);
+object.addEventListener("blur", function () { helpText.innerHTML = helpArray[7]; }, false);
+}
+window.addEventListener("load", init, false);
+</script>
+            </td>
+        </tr>
+
+        <!--footer-->
+        <tr>
+            <td class="footer" id="Footer">
+                <div>
+                    <table width="100%">
+                        <tr style="color:white">
+                            <td style=" width: 50%; height:20%">
+                                <h3 style="color:cornflowerblue"> Learning Ocean</h3>
+                            </td>
+                            <td style=" width: 25%">
+                                <p><h4 style="color:cornflowerblue">Contact Us:</h4></p>
+                            </td>
+                            <td style="width:25%">
+                                <h4 style="color:cornflowerblue">About Us</h4>
+                            </td>
+
+
+                        <tr style="color:white">
+                            <td style=" width: 50%">
+                                <p>Learning Ocean is an online learning platform that</p>
+                                <p>offers anyone, anywhere access to online courses</p>
+                                <p>from King Abdulaziz University</p>
+                            </td>
+
+                            <td style=" width: 25%">
+                                <p><a style="color:white" href="mailto:fahmed0041@stu.kau.edu.sa">Fahmed0041@stu.kau.edu.sa</a></p>
+                                <p><a style="color:white" href="mailto:ralmalke0004@stu.kau.edu.sa">Ralmalke0004@stu.kau.edu.sa</a></p>
+                                <p><a style="color:white" href="mailto:falansari0020@stu.kau.edu.sa">Falansari0020@stu.kau.edu.sa</a></p>
+
+                             
+                                <a href="https://www.facebook.com/KingAbdulazizUniversity" class="fa fa-facebook"></a>
+                                <a href="https://twitter.com/kauweb?s=11&t=iJY_Bw-DtiToL9CGwothhQ" class="fa fa-twitter"></a>
+                                <a href="https://www.youtube.com/user/kauUniversity" class="fa fa-youtube"></a>
+                            </td>
+
+                            <td style="width:25%">
+                                <a style="color:white" href="PrivacyPolicy.html">Privcy Policy</a>
+                            </td>
+
+
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>

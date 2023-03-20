@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <style>
+
+        /* Float four columns side by side */
+        .column2 {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+            margin-left: 90px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row2 {
+            margin: 0 -5px;
+        }
+
+            /* Clear floats after the columns */
+            .row2:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column2 {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" border-collapse="collapse" border="0" cellpadding="0" cellspacing="0">
+        <!--header-->
+        <tr>
+            <th>
+                <div id="navbar">
+                    <table width="100%">
+                        <tr>
+                            <td width="25%">
+                                <a style="padding:0; margin-left:50px"> <img src="img/Logo.jpg" width="80" height="80" /></a>
+                            </td>
+                            <td width="50%">
+                                <ul style="padding:0px">
+                                    <li class="linerList">
+                                        <a style="font-size:130%" href="Home.html">Home</a>
+                                    </li>
+
+                                    <li class="linerList">
+                                        <a style="font-size:130%" href="#Courses">Cources</a>
+                                    </li>
+
+                                    <li class="linerList">
+                                        <a style="font-size:130%" href="#AboutUs">About us</a>
+                                    </li>
+
+                                    <li class="linerList">
+                                        <a style="font-size:130%" href="#Footer">Contact</a>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td width="25">
+                                <a href="Login.html" class="button" style="width:auto">Login</a>
+                                <a href="SignUp.html" class="button" style="width:auto">Sign Up</a>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </th>
+        </tr>
+
+        <!--Course Categories-->
+        <tr>
+            <td>
+<center>
+            <div>
+                <h1 style="text-align:center; margin-top: 50px;">Course Categories</h1>
+
+                <div class="row2" style="margin-bottom: 10px; padding: 40px">
+                    <div class="column2">
+                        <div class="card2">
+                            <img src="img/goal.png" alt="Avatar" style="width:30%">
+                            <p>Some text</p>
+                            <p>Some text</p>
+                        </div>
+                    </div>
+
+
+                    <div class="column2">
+                        <div class="card2">
+                            <img src="img/goal.png" alt="Avatar" style="width:30%">
+                            <p>Some text</p>
+                            <p>Some text</p>
+                        </div>
+                    </div>
+
+
+                    <div class="column2">
+                        <div class="card2">
+                            <img src="img/goal.png" alt="Avatar" style="width:30%">
+                            <p>Some text</p>
+                            <p>Some text</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                                <div style="margin-bottom: 80px; padding: 40px">
+                                    <div class="row2">
+                                        <div class="column2">
+                                            <div class="card2">
+                                                <img src="img/goal.png" alt="Avatar" style="width:30%">
+                                                <p>Some text</p>
+                                                <p>Some text</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column2">
+                                            <div class="card2">
+                                                <img src="img/goal.png" alt="Avatar" style="width:30%">
+                                                <p>Some text</p>
+                                                <p>Some text</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="column2">
+                                            <div class="card2">
+                                                <img src="img/goal.png" alt="Avatar" style="width:30%">
+                                                <p>Some text</p>
+                                                <p>Some text</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+</center>
+                            
+            </td>
+        </tr>
+
+        <!--Footer-->
+        <tr>
+            <td class="footer" id="Footer">
+                <div>
+                    <table width="100%">
+                        <tr style="color:white">
+                            <td style=" width: 50%; height:20%">
+                                <h3 style="color:cornflowerblue"> Learning Ocean</h3>
+                            </td>
+                            <td style=" width: 25%">
+                                <p><h4 style="color:cornflowerblue">Contact Us:</h4></p>
+                            </td>
+                            <td style="width:25%">
+                                <h4 style="color:cornflowerblue">About Us</h4>
+                            </td>
+
+
+                        <tr style="color:white">
+                            <td style=" width: 50%">
+                                <p>Learning Ocean is an online learning platform that</p>
+                                <p>offers anyone, anywhere access to online courses</p>
+                                <p>from King Abdulaziz University</p>
+                            </td>
+
+                            <td style=" width: 25%">
+                                <p><a style="color:white" href="mailto:fahmed0041@stu.kau.edu.sa">Fahmed0041@stu.kau.edu.sa</a></p>
+                                <p><a style="color:white" href="mailto:ralmalke0004@stu.kau.edu.sa">Ralmalke0004@stu.kau.edu.sa</a></p>
+                                <p><a style="color:white" href="mailto:falansari0020@stu.kau.edu.sa">Falansari0020@stu.kau.edu.sa</a></p>
+
+                                <a href="https://twitter.com/kauweb?s=11&t=iJY_Bw-DtiToL9CGwothhQ"><i class='fab fa-twitter'></i></a>
+                                <a href="https://www.facebook.com/KingAbdulazizUniversity"><i class='fab fa-facebook-f'></i></a>
+                                <a href="https://www.youtube.com/user/kauUniversity"><i class='fab fa-youtube'></i></a>
+                            </td>
+
+                            <td style="width:25%">
+                                <a style="color:white" href="PrivacyPolicy.html">Privcy Policy</a>
+                            </td>
+
+
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

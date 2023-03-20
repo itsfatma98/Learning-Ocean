@@ -1,0 +1,332 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+indexh1 {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 60px;
+    background-color: #F5DEB3;
+}
+
+
+/*header*/
+#navbar {
+    overflow: hidden;
+    background-color: #043576;
+}
+
+    #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+.linerList {
+    display: inline-block;
+    width: auto;
+    list-style: outside none none;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .content {
+        padding-top: 60px;
+    }
+
+
+/*Banner*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/home1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
+/*Features*/
+.Procard {
+    transition: 0.3s;
+    width: 30%;
+    padding: 10px 10px;
+}
+
+
+    .Procard:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.Procontainer {
+    padding: 2px 16px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button1 {
+    background-color: #2b4b82;
+    color: black;
+    border: 2px solid #2b4b82;
+}
+
+    .button1:hover {
+        background-color: #778899;
+        color: white;
+    }
+
+
+
+/*footer*/
+.footer {
+    width: 100%;
+    min-height: 70px;
+    background-color: #043576;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+/*Slider*/
+.swiper {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+}
+
+
+
+.card {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 4px 10px rgb(216, 213, 213);
+    background: #fff;
+    font-size: 18px;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 #9abcee;
+    }
+
+.card-body {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+.image-content {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50%;
+    background-size: 60%;
+    border-radius: 20px 20px 0 20px;
+}
+
+
+.button {
+    background-color: #DF5A52;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 45%;
+    height: 45px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+    .button:hover {
+        background-color: #778899;
+    }
+
+.interface {
+    font-size: 60px;
+    color: white;
+}
+
+.loginform-structure {
+    height: 600px;
+    width: 500px;
+    background-color: #043576;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.signupform-structure {
+    height: 950px;
+    width: 500px;
+    background-color: #043576;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.Login-title {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: white;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-left: 150px;
+}
+
+.SignUp-title {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: white;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-left: 130px;
+}
+
+.form-holder {
+    position: absolute;
+    color: white;
+    padding-left: 5em;
+}
+
+.input {
+    border-radius: 5px;
+    height: 35px;
+    width: 340px;
+    border: 0;
+}
+
+.forgetpsw {
+    color: cornflowerblue;
+}
+
+.Loginbtn {
+    background-color: #DF5A52;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 45%;
+    height: 45px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-right: 170px;
+    padding: 10px;
+}
+
+    .Loginbtn:hover {
+        background-color: #778899;
+    }
+
+.Signupbtn {
+    background-color: #DF5A52;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 45%;
+    height: 45px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 170px;
+    padding: 10px;
+}
+
+    .Signupbtn:hover {
+        background-color: #778899;
+    }
+
+.PPContainer {
+    padding-left: 50px;
+}
+
+
